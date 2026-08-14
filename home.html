@@ -18,80 +18,52 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- fonawesome -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
+
+    <link rel="shortcut icon" href="./assets/T_favicon.avif" type="image/x-icon">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/animation.css">
-
-
-
 </head>
-
-
-<!-- =========================================
-     TakaGo Home / Dashboard Page
-========================================= -->
 
 <body>
 
-    <!-- =========================================
-         MOBILE APP BODY
-    ========================================== -->
+    <!-- TakaGo Home / Dashboard Page -->
 
     <main class="app-body w-full max-w-md mx-auto">
 
         <section class="w-11/12 mx-auto min-h-screen flex flex-col">
 
-
-            <!-- =================================
-                 HEADER / NAVBAR
-            ================================== -->
+            <!-- HEADER / NAVBAR -->
 
             <header class="pt-6 sticky top-0 z-50 bg-base-100/95 backdrop-blur-sm">
 
-                <div class="flex items-center justify-between pb-4 border-b border-base-200">
+                <div class="flex items-center justify-between pb-4 border-b-2 border-primary/50">
 
                     <!-- Logo + Balance -->
+
                     <div class="flex items-center gap-3">
 
                         <!-- Logo -->
-                        <div class="
-                            w-10
-                            h-10
-                            rounded-xl
-                            bg-primary
-                            flex
-                            items-center
-                            justify-center
-                            text-white
-                            text-xl
-                            font-bold
-                            shadow-sm
-                        ">
+
+                        <div
+                            class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white text-xl font-bold shadow-sm">
                             T
                         </div>
 
                         <!-- Balance -->
+
                         <div>
 
-                            <p class="
-                                text-xl
-                                font-bold
-                                text-neutral
-                                leading-none
-                            ">
+                            <p class="text-xl font-bold text-neutral leading-none">
                                 $ <span id="balance">55,070</span>
                             </p>
 
-                            <p class="
-                                text-[10px]
-                                text-base-content/40
-                                mt-1
-                            ">
+                            <p class="text-[10px] text-base-content/40 mt-1">
                                 Available Balance
                             </p>
 
@@ -99,19 +71,10 @@
 
                     </div>
 
-
                     <!-- Logout -->
-                    <a href="index.html" class="
-                            btn
-                            btn-soft
-                            btn-sm
-                            rounded-md
-                            text-neutral
-                            hover:text-error
-                            hover:bg-error/10
-                            transition-all
-                            duration-300
-                        ">
+
+                    <a href="index.html"
+                        class="btn btn-soft btn-sm rounded-md text-neutral hover:text-error hover:bg-error/10 transition-all duration-300">
 
                         <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
 
@@ -126,65 +89,39 @@
             </header>
 
 
-
-            <!-- =================================
-                 MAIN CONTENT
-            ================================== -->
+            <!-- MAIN CONTENT -->
 
             <div class="flex-1 py-8">
 
-
-                <!-- =================================
-                     WELCOME SECTION
-                ================================== -->
+                <!-- WELCOME SECTION -->
 
                 <div class="mb-8">
 
-                    <h1 class="
-                        text-2xl
-                        font-bold
-                        text-neutral
-                    ">
+                    <h1 class="text-2xl font-bold text-neutral">
                         Welcome to
                         <span class="text-primary">
                             TakaGo
                         </span>
                     </h1>
 
-                    <p class="
-                        text-sm
-                        text-base-content/45
-                        leading-6
-                        mt-2
-                    ">
-                        Fast, secure, and simple financial services
-                        designed to make managing your money easier.
+                    <p class="text-sm text-base-content/45 leading-6 mt-2">
+                        Fast, secure, and simple financial services designed to make managing your money easier.
                     </p>
 
                 </div>
 
 
-
-                <!-- =================================
-                     QUICK SERVICES
-                ================================== -->
+                <!-- QUICK SERVICES -->
 
                 <div>
 
                     <div class="flex items-center justify-between mb-4">
 
-                        <h2 class="
-                            text-sm
-                            font-semibold
-                            text-neutral
-                        ">
+                        <h2 class="text-sm font-semibold text-neutral">
                             Quick Services
                         </h2>
 
-                        <span class="
-                            text-[10px]
-                            text-base-content/35
-                        ">
+                        <span class="text-[10px] text-base-content/35">
                             Choose a service
                         </span>
 
@@ -195,36 +132,13 @@
 
                     <div class="grid grid-cols-3 gap-3">
 
-
                         <!-- Send Money -->
-                        <button onclick="showOnly('transfer-section')" class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-paper-plane
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button onclick="showOnly('transfer-section')"
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-paper-plane text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Send Money
@@ -233,36 +147,13 @@
                         </button>
 
 
-
                         <!-- Cash Out -->
-                        <button onclick="showOnly('cashout-section')" class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-money-bill-wave
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button onclick="showOnly('cashout-section')"
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-money-bill-wave text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Cash Out
@@ -271,36 +162,13 @@
                         </button>
 
 
-
                         <!-- Add Money -->
-                        <button onclick="showOnly('addmoney-section')" class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-circle-plus
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button onclick="showOnly('addmoney-section')"
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-circle-plus text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Add Money
@@ -309,36 +177,13 @@
                         </button>
 
 
-
                         <!-- Pay Bill -->
-                        <button class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-file-invoice-dollar
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-file-invoice-dollar text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Pay Bill
@@ -347,36 +192,13 @@
                         </button>
 
 
-
                         <!-- Get Bonus -->
-                        <button onclick="showOnly('getbonus-section')" class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-gift
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button onclick="showOnly('getbonus-section')"
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-gift text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Get Bonus
@@ -385,36 +207,13 @@
                         </button>
 
 
-
                         <!-- Transactions -->
-                        <button onclick="showOnly('history-container')" class="
-                                group
-                                btn
-                                h-[78px]
-                                flex-col
-                                gap-1
-                                rounded-2xl
-                                bg-base-200
-                                border
-                                border-base-200
-                                text-primary
-                                transition-all
-                                duration-300
-                                hover:bg-primary
-                                hover:text-white
-                                hover:border-primary
-                                hover:-translate-y-1
-                                hover:shadow-md
-                            ">
 
-                            <i class="
-                                fa-solid
-                                fa-clock-rotate-left
-                                text-lg
-                                transition-transform
-                                duration-300
-                                group-hover:scale-110
-                            "></i>
+                        <button onclick="showOnly('history-container')"
+                            class="group btn h-[78px] flex-col gap-1 rounded-2xl bg-base-200 border border-base-200 text-primary transition-all duration-300 hover:bg-primary hover:text-white hover:border-primary hover:-translate-y-1 hover:shadow-md">
+
+                            <i
+                                class="fa-solid fa-clock-rotate-left text-lg transition-transform duration-300 group-hover:scale-110"></i>
 
                             <span class="text-[11px]">
                                 Transactions
@@ -427,44 +226,20 @@
                 </div>
 
 
+                <!-- DEFAULT INFORMATION CARD -->
 
-                <!-- =================================
-                     DEFAULT INFORMATION CARD
-                ================================== -->
+                <section id="default-section" class="mx-auto mt-8 w-full">
 
-                <section id="default-section" class="
-                        mx-auto
-                        mt-8
-                        w-full
-                    ">
-
-                    <div class="
-                        card
-                        bg-base-100
-                        border
-                        border-base-200
-                        rounded-3xl
-                        shadow-sm
-                        overflow-hidden
-                    ">
+                    <div class="card bg-base-100 border border-base-200 rounded-3xl shadow-sm overflow-hidden">
 
                         <div class="card-body p-5">
-
 
                             <!-- Card Heading -->
 
                             <div class="flex items-center gap-3">
 
-                                <div class="
-                                    w-10
-                                    h-10
-                                    rounded-xl
-                                    bg-primary/10
-                                    text-primary
-                                    flex
-                                    items-center
-                                    justify-center
-                                ">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
 
                                     <i class="fa-solid fa-wallet"></i>
 
@@ -472,22 +247,14 @@
 
                                 <div>
 
-                                    <h2 class="
-                                        text-lg
-                                        font-bold
-                                        text-neutral
-                                    ">
+                                    <h2 class="text-lg font-bold text-neutral">
                                         Your Money,
                                         <span class="text-primary">
                                             Your Control
                                         </span>
                                     </h2>
 
-                                    <p class="
-                                        text-[10px]
-                                        text-base-content/40
-                                        mt-0.5
-                                    ">
+                                    <p class="text-[10px] text-base-content/40 mt-0.5">
                                         Everything you need in one place
                                     </p>
 
@@ -496,66 +263,37 @@
                             </div>
 
 
-
                             <!-- Description -->
 
-                            <p class="
-                                text-sm
-                                text-base-content/50
-                                leading-6
-                                mt-5
-                            ">
-                                Manage your money quickly and securely.
-                                Choose any service above to send money,
-                                add funds, cash out, pay bills, earn
-                                rewards, or track your transactions.
+                            <p class="text-sm text-base-content/50 leading-6 mt-5">
+                                Manage your money quickly and securely. Choose any service above to send money, add
+                                funds, cash out, pay bills, earn rewards, or track your transactions.
                             </p>
 
 
-
                             <div class="divider my-3"></div>
-
 
 
                             <!-- Features -->
 
                             <div class="space-y-4">
 
-
                                 <!-- Feature 1 -->
 
                                 <div class="flex items-center gap-3">
 
-                                    <div class="
-                                        w-8
-                                        h-8
-                                        rounded-lg
-                                        bg-success/10
-                                        text-success
-                                        flex
-                                        items-center
-                                        justify-center
-                                        text-xs
-                                    ">
-
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-success/10 text-success flex items-center justify-center text-xs">
                                         <i class="fa-solid fa-shield-halved"></i>
-
                                     </div>
 
                                     <div>
 
-                                        <p class="
-                                            text-xs
-                                            font-semibold
-                                            text-neutral
-                                        ">
+                                        <p class="text-xs font-semibold text-neutral">
                                             Fast & Secure
                                         </p>
 
-                                        <p class="
-                                            text-[10px]
-                                            text-base-content/40
-                                        ">
+                                        <p class="text-[10px] text-base-content/40">
                                             Your transactions stay protected
                                         </p>
 
@@ -564,41 +302,22 @@
                                 </div>
 
 
-
                                 <!-- Feature 2 -->
 
                                 <div class="flex items-center gap-3">
 
-                                    <div class="
-                                        w-8
-                                        h-8
-                                        rounded-lg
-                                        bg-primary/10
-                                        text-primary
-                                        flex
-                                        items-center
-                                        justify-center
-                                        text-xs
-                                    ">
-
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center text-xs">
                                         <i class="fa-solid fa-wallet"></i>
-
                                     </div>
 
                                     <div>
 
-                                        <p class="
-                                            text-xs
-                                            font-semibold
-                                            text-neutral
-                                        ">
+                                        <p class="text-xs font-semibold text-neutral">
                                             Easy Money Management
                                         </p>
 
-                                        <p class="
-                                            text-[10px]
-                                            text-base-content/40
-                                        ">
+                                        <p class="text-[10px] text-base-content/40">
                                             Manage your balance effortlessly
                                         </p>
 
@@ -607,41 +326,22 @@
                                 </div>
 
 
-
                                 <!-- Feature 3 -->
 
                                 <div class="flex items-center gap-3">
 
-                                    <div class="
-                                        w-8
-                                        h-8
-                                        rounded-lg
-                                        bg-warning/10
-                                        text-warning
-                                        flex
-                                        items-center
-                                        justify-center
-                                        text-xs
-                                    ">
-
+                                    <div
+                                        class="w-8 h-8 rounded-lg bg-warning/10 text-warning flex items-center justify-center text-xs">
                                         <i class="fa-solid fa-clock-rotate-left"></i>
-
                                     </div>
 
                                     <div>
 
-                                        <p class="
-                                            text-xs
-                                            font-semibold
-                                            text-neutral
-                                        ">
+                                        <p class="text-xs font-semibold text-neutral">
                                             Track Every Transaction
                                         </p>
 
-                                        <p class="
-                                            text-[10px]
-                                            text-base-content/40
-                                        ">
+                                        <p class="text-[10px] text-base-content/40">
                                             Keep an eye on your financial activity
                                         </p>
 
@@ -652,35 +352,17 @@
                             </div>
 
 
-
                             <!-- Interactive Hint -->
 
-                            <div class="
-                                alert
-                                bg-primary/5
-                                border
-                                border-primary/10
-                                mt-6
-                                rounded-2xl
-                                py-3
-                                px-4
-                            ">
+                            <div class="alert bg-primary/5 border border-primary/10 mt-6 rounded-2xl py-3 px-4">
 
-                                <i class="
-                                    fa-solid
-                                    fa-lightbulb
-                                    text-primary
-                                "></i>
+                                <i class="fa-solid fa-lightbulb text-primary"></i>
 
-                                <span class="
-                                    text-xs
-                                    text-base-content/55
-                                ">
+                                <span class="text-xs text-base-content/55">
                                     Select a service above to get started.
                                 </span>
 
                             </div>
-
 
                         </div>
 
@@ -688,29 +370,18 @@
 
                 </section>
 
-
             </div>
 
 
-
-            <!-- =================================
-                 FOOTER
-            ================================== -->
+            <!-- FOOTER -->
 
             <footer class="pb-6 pt-2 text-center">
 
-                <p class="
-                    text-[9px]
-                    uppercase
-                    tracking-[1.5px]
-                    text-base-content/25
-                    font-semibold
-                ">
+                <p class="text-[9px] uppercase tracking-[1.5px] text-base-content/25 font-semibold">
                     TakaGo Financial Services
                 </p>
 
             </footer>
-
 
         </section>
 
