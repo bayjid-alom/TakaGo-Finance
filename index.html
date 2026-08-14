@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TakaGo | Login</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.avif" type="image/x-icon">
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: "Outfit", sans-serif;
+        }
+
+
+        /* =================================
+           OUTER BACKGROUND
+        ================================= */
+
+        body {
+            background: #eef3fb;
+        }
+
+
+        /* =================================
+           MOBILE APP BODY
+        ================================= */
+
+        .app-body {
+            position: relative;
+
+            min-height: 100vh;
+
+            overflow: hidden;
+
+            background:
+                radial-gradient(circle at 10% 5%,
+                    rgba(37, 99, 235, 0.08),
+                    transparent 28%),
+                #f8faff;
+
+            box-shadow:
+                0 0 50px rgba(35, 67, 110, 0.06);
+        }
+
+
+        /* =================================
+           LOGO
+        ================================= */
+
+        .logo-text {
+            font-size: 2.15rem;
+
+            font-weight: 700;
+
+            letter-spacing: -1.8px;
+        }
+
+
+        .logo-box {
+            position: relative;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 8px 20px rgba(37, 99, 235, 0.20);
+        }
+
+
+        .logo-box::after {
+            content: "";
+
+            position: absolute;
+
+            width: 70px;
+            height: 15px;
+
+            background: rgba(255, 255, 255, 0.25);
+
+            transform: rotate(-45deg);
+
+            left: -80px;
+
+            animation: shine 5s ease-in-out infinite;
+        }
+
+
+        /* =================================
+           LOGIN CARD
+        ================================= */
+
+        .login-card {
+            animation:
+                card-entry 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+
+        /* =================================
+           LOGIN BUTTON
+        ================================= */
+
+        .login-btn {
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+        }
+
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+
+            box-shadow:
+                0 12px 25px rgba(37, 99, 235, 0.20);
+        }
+
+
+        .login-btn:active {
+            transform: scale(0.98);
+        }
+
+
+        /* =================================
+           ANIMATIONS
+        ================================= */
+
+        @keyframes card-entry {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(25px) scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0) scale(1);
+            }
+
+        }
+
+
+        @keyframes shine {
+
+            0%,
+            65% {
+                left: -80px;
+            }
+
+            85%,
+            100% {
+                left: 100px;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         MOBILE APP BODY
+    ====================================== -->
+
+    <main class="
+            app-body
+            w-full
+            max-w-md
+            mx-auto
+        ">
+
+
+        <!-- =================================
+             CONTENT WIDTH
+        ================================== -->
+
+        <section class="
+                w-11/12
+                mx-auto
+                min-h-screen
+                flex
+                flex-col
+ ">
+
+
+            <!-- =================================
+                 LOGO
+            ================================== -->
+
+            <header class="pt-14">
+
+                <div class="flex items-center justify-center gap-3">
+
+
+                    <!-- T -->
+
+                    <div class="
+                            logo-box
+                            w-11
+                            h-11
+                            rounded-xl
+                            bg-primary
+                            flex
+                            items-center
+                            justify-center
+                            text-white
+                            text-2xl
+                            font-bold
+                        ">
+                        T
+                    </div>
+
+
+                    <!-- TakaGo -->
+
+                    <h1 class="logo-text text-neutral">
+
+                        Taka<span class="text-primary">Go</span>
+
+                    </h1>
+
+
+                </div>
+
+
+                <p class="
+                        text-center
+                        text-xs
+                        text-base-content/40
+                        mt-3
+                    ">
+                    Simple. Secure. Smarter banking.
+                </p>
+
+            </header>
+
+
+
+            <!-- =================================
+                 LOGIN AREA
+            ================================== -->
+
+            <div class="
+                    flex-1
+                    flex
+                    flex-col
+                    justify-center
+                    py-10
+                ">
+
+
+                <!-- LOGIN CARD -->
+
+                <div class="
+                        login-card
+                        card
+                        w-full
+                        bg-base-100
+                        border
+                        border-base-200
+                        rounded-3xl
+                        shadow-lg
+                    ">
+
+                    <div class="card-body p-5">
+
+
+                        <!-- Heading -->
+
+                        <div class="text-center mb-7">
+
+                            <h2 class="
+                                    text-2xl
+                                    font-semibold
+                                    text-neutral
+                                ">
+                                Welcome back
+                            </h2>
+
+
+                            <p class="
+                                    text-sm
+                                    text-base-content/45
+                                    mt-2
+                                ">
+                                Login to continue to your account
+                            </p>
+
+                        </div>
+
+
+
+                        <!-- FORM -->
+
+                        <fieldset class="fieldset">
+
+
+                            <!-- Mobile -->
+
+                            <label class="
+                                    label
+                                    font-medium
+                                    text-neutral
+                                ">
+                                Mobile Number
+                            </label>
+
+
+                            <input id="input-number" type="tel" inputmode="numeric" maxlength="11"
+                                placeholder="01XXXXXXXXX" class="
+                                    input
+                                    input-bordered
+                                    rounded-full
+                                    w-full
+                                    bg-base-200
+                                    focus:border-primary
+                                    focus:outline-none
+                                ">
+
+
+                            <!-- PIN -->
+
+                            <label class="
+                                    label
+                                    font-medium
+                                    text-neutral
+                                    mt-5
+                                ">
+                                4 Digit PIN
+                            </label>
+
+
+                            <input id="input-pin" type="password" inputmode="numeric" maxlength="4"
+                                placeholder="Enter 4 digit PIN" class="
+                                    input
+                                    input-bordered
+                                    rounded-full
+                                    w-full
+                                    bg-base-200
+                                    focus:border-primary
+                                    focus:outline-none
+                                ">
+
+
+                            <!-- Forgot -->
+
+                            <div class="text-right mt-2">
+
+                                <a href="#" class="
+                                        text-xs
+                                        text-primary
+                                        font-medium
+                                        hover:underline
+                                    ">
+                                    Forgot PIN?
+                                </a>
+
+                            </div>
+
+
+                            <!-- Login -->
+
+                            <button id="login-btn" type="button" class="
+                                    login-btn
+                                    btn
+                                    btn-primary
+                                    mt-5
+                                    w-full
+                                    rounded-full
+                                    h-12
+                                    min-h-12
+                                    text-base
+                                    font-semibold
+                                ">
+                                Login
+                            </button>
+
+
+                        </fieldset>
+
+
+
+                        <!-- CREATE ACCOUNT -->
+
+                        <div class="
+                                text-center
+                                mt-6
+                                pt-5
+                                border-t
+                                border-base-200
+                            ">
+
+                            <p class="
+                                    text-xs
+                                    text-base-content/45
+                                ">
+                                Don't have a TakaGo account?
+                            </p>
+
+
+                            <a href="#" class="
+                                    inline-block
+                                    mt-1
+                                    text-sm
+                                    font-semibold
+                                    text-primary
+                                    hover:underline
+                                ">
+                                Create an account
+                            </a>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- SECURITY -->
+
+                <div class="
+                        flex
+                        items-center
+                        justify-center
+                        gap-2
+                        mt-6
+                        
+                    ">
+
+                    <span class="
+                            w-5
+                            h-5
+                            rounded-full
+                            bg-primary/10
+                            text-primary
+                            flex
+                            items-center
+                            justify-center
+                            text-[10px]
+                            font-bold
+                        ">
+                        ✓
+                    </span>
+
+
+                    <span class="
+                            text-[10px]
+                            text-base-content/40
+                        ">
+                        Your information is securely protected
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================
+                 FOOTER
+            ================================== -->
+
+            <footer class="pb-6 text-center">
+
+                <p class="
+                        text-[9px]
+                        uppercase
+                        tracking-[1.5px]
+                        text-base-content/25
+                        font-semibold
+                    ">
+                    TakaGo Financial Services
+                </p>
+
+            </footer>
+
+
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
