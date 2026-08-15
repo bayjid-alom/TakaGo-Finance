@@ -1,6 +1,6 @@
 # **`TakaGo` 🔥**
 
-> ## **🚀 Live Demo :**
+## **🚀 Live Demo :**
 
 [[ Visit: **TakaGo** ]](https://taka-go-finance.vercel.app/)
 
