@@ -226,6 +226,149 @@
                 </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!-- CASH OUT SECTION -->
+                <section id="cashout-section" class="mx-auto mt-8 w-full ">
+
+                    <div class="card bg-base-100 border border-base-200 rounded-3xl shadow-sm overflow-hidden">
+
+                        <div class="card-body p-5">
+
+                            <!-- Heading -->
+                            <div class="flex items-center gap-3 mb-6">
+
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+                                    <i class="fa-solid fa-money-bill-transfer"></i>
+                                </div>
+
+                                <div>
+                                    <h2 class="text-lg font-bold text-neutral">
+                                        Cash Out
+                                    </h2>
+
+                                    <p class="text-[10px] text-base-content/40 mt-0.5">
+                                        Withdraw money securely
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Cash Out Form -->
+                            <form id="cashout-form" class="space-y-4">
+
+                                <!-- Agent Number -->
+                                <div>
+                                    <label class="text-xs font-medium text-neutral mb-2 block">
+                                        Agent Number
+                                    </label>
+
+                                    <label
+                                        class="input input-bordered w-full rounded-xl flex items-center gap-3 focus-within:border-primary">
+
+                                        <i class="fa-solid fa-phone text-base-content/35"></i>
+
+                                        <input id="cashout-number" type="tel" placeholder="01XXXXXXXXX" maxlength="11"
+                                            class="grow text-sm" required />
+
+                                    </label>
+                                </div>
+
+
+                                <!-- Amount -->
+                                <div>
+                                    <label class="text-xs font-medium text-neutral mb-2 block">
+                                        Amount
+                                    </label>
+
+                                    <label
+                                        class="input input-bordered w-full rounded-xl flex items-center gap-3 focus-within:border-primary">
+
+                                        <span class="text-sm font-semibold text-primary">
+                                            $
+                                        </span>
+
+                                        <input id="cashout-amount" type="number" placeholder="Enter amount" min="1"
+                                            class="grow text-sm" required />
+
+                                    </label>
+                                </div>
+
+
+                                <!-- PIN -->
+                                <div>
+                                    <label class="text-xs font-medium text-neutral mb-2 block">
+                                        PIN
+                                    </label>
+
+                                    <label
+                                        class="input input-bordered w-full rounded-xl flex items-center gap-3 focus-within:border-primary">
+
+                                        <i class="fa-solid fa-lock text-base-content/35"></i>
+
+                                        <input id="cashout-pin" type="password" placeholder="Enter your PIN"
+                                            maxlength="5" class="grow text-sm" required />
+
+                                    </label>
+                                </div>
+
+
+                                <!-- Cash Out Button -->
+                                <button id="cashout-button" type="submit" class="btn btn-primary w-full rounded-xl mt-2 gap-2">
+
+                                    <i class="fa-solid fa-money-bill-wave"></i>
+
+                                    Cash Out
+                                </button>
+
+                            </form>
+
+
+                            <!-- Security Hint -->
+                            <div class="alert bg-primary/5 border border-primary/10 mt-5 rounded-2xl py-3 px-4">
+
+                                <i class="fa-solid fa-shield-halved text-primary"></i>
+
+                                <span class="text-xs text-base-content/50">
+                                    Make sure the agent number and amount are correct before confirming.
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <!-- DEFAULT INFORMATION CARD -->
 
                 <section id="default-section" class="mx-auto mt-8 w-full">
@@ -369,23 +512,30 @@
                     </div>
 
                 </section>
-
             </div>
 
 
             <!-- FOOTER -->
 
             <footer class="pb-6 pt-2 text-center">
-
                 <p class="text-[9px] uppercase tracking-[1.5px] text-base-content/25 font-semibold">
                     TakaGo Financial Services
                 </p>
-
             </footer>
 
         </section>
 
     </main>
+
+
+
+
+
+
+
+
+    <script src="script/machine.js"></script>
+    <script src="script/cashout.js"></script>
 
 </body>
 
