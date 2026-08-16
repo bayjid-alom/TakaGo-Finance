@@ -1,5 +1,3 @@
-console.log("Connected machine")
-
 function getValueFromInput(id) {
     const input = document.getElementById(id);
     const value = input.value;
@@ -7,11 +5,15 @@ function getValueFromInput(id) {
 }
 
 
+
 function getBalance(id) {
     const balanceElem = document.getElementById(id);
     const balance = balanceElem.innerText;
+
+    console.log("Amount :", balance)
     return Number(balance);
 }
+
 
 
 function setBalance(value) {
