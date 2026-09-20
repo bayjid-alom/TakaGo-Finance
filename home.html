@@ -40,11 +40,136 @@
 
 
 
-   <h2 class="text-2xl text-center font-bold">This is home </h2>
+    <header class="sticky top-0 z-50 bg-base-100/95 backdrop-blur-xl border-b border-base-300">
+        <div class="px-5 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-primary-content font-black text-2xl shadow-md shadow-primary/20">
+                    T
+                </div>
+
+                <div>
+                    <p class="text-2xl font-bold text-neutral">
+                        $ <span id="balance">75050</span>
+                    </p>
+                    <p class="text-xs text-neutral/50">Available Balance</p>
+                </div>
+            </div>
+
+            <a href="index.html"
+                class="btn btn-soft btn-md rounded-md text-neutral hover:bg-primary hover:text-primary-content hover:border-primary transition-all duration-300">
+                <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i>
+                Logout
+            </a>
+        </div>
+    </header>
 
 
 
 
+    <section class="p-5 space-y-7">
+        <div>
+            <h2 class="text-3xl font-black tracking-tight text-neutral">
+                Welcome to <span class="text-primary">TakaGo</span>
+            </h2>
+
+            <p class="text-sm text-neutral/55 leading-6 mt-3">
+                Experience fast, secure, and seamless financial services.
+                Add money, cash out, transfer funds, earn rewards, and manage
+                your transactions—all in one place.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-3">
+            <button onclick="showOnly('addmoney-section')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300  hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-1.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs">Add Money</span>
+            </button>
+
+            <button onclick="showOnly('cashout-section')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300  hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-2.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs">Cash Out</span>
+            </button>
+
+            <button onclick="showOnly('transfer-section')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300  hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-3.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs text-center">Transfer Money</span>
+            </button>
+
+            <button onclick="showOnly('getbonus-section')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300 hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-4.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs">Get Bonus</span>
+            </button>
+
+            <button onclick="showOnly('paybill-section')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300 hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-5.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs">Pay Bill</span>
+            </button>
+
+            <button onclick="showOnly('history-container')"
+                class="btn h-[78px] flex-col gap-1 bg-base-100 text-primary border-base-300 hover:bg-primary hover:text-primary-content hover:border-primary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 focus:bg-primary focus:text-primary-content focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition-all duration-300">
+                <img src="./assets/opt-6.png" alt="" class="w-7 h-7 object-contain">
+                <span class="text-xs">Transactions</span>
+            </button>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section id="default-section" class=" px-5 pb-10">
+        <div class="card bg-white shadow-md border border-base-200 rounded-xl">
+            <div class="card-body">
+
+                <h2 class="text-2xl font-bold"><span class="text-primary">TakaGo!</span></h2>
+
+                <p class="text-neutral/60 leading-7 text-[16px]">
+                    Manage your money securely and effortlessly with TakaGo. Choose any
+                    service above to add money, cash out, transfer funds, pay bills,
+                    claim bonuses, or view your transaction history.
+                </p>
+
+                <div class="divider my-2"></div>
+
+                <div class="space-y-3 text-sm text-neutral/70">
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-success"></i>
+                        <span>Fast & Secure Transactions</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-wallet text-primary"></i>
+                        <span>Easy Balance Management</span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <i class="fa-solid fa-clock-rotate-left text-warning"></i>
+                        <span>Track Every Transaction</span>
+                    </div>
+                </div>
+
+                <div class="alert alert-info mt-6 rounded-xl">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>
+                        Select any service from the buttons above to get started.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <script src="script/machine.js"></script>
 
