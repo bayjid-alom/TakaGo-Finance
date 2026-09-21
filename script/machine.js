@@ -19,5 +19,21 @@ function getBalance() {
 function setBalance(value) {
     const balanceInput = document.getElementById("balance")
     balanceInput.innerText = value;
+}
 
+
+
+
+
+// showonly
+
+function showOnly(id){
+    const addMoney = document.getElementById("addmoney-section")
+
+
+    addMoney.classList.add("hidden")
+
+
+    const selected = document.getElementById(id)
+    selected.classList.remove("hidden")
 }
